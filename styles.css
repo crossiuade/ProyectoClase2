@@ -1,0 +1,187 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: black;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #eec8c8;
+    color: black;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #d4a0a0;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+main h2 {
+    color: black;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+main h3 {
+    color: #555;
+    margin-top: 2rem;
+}
+
+main ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+}
+
+main a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #eec8c8;
+    color: black;
+    position: relative;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+/* Media Queries - Responsive Design */
+
+/* Tablets (768px y menores) */
+@media (max-width: 768px) {
+    header {
+        padding: 0.8rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.75rem;
+    }
+
+    main {
+        max-width: 100%;
+        margin: 1rem auto;
+        padding: 0.8rem;
+    }
+
+    main h3 {
+        margin-top: 1.5rem;
+    }
+
+    main ul {
+        margin-left: 1.5rem;
+        font-size: 0.95rem;
+    }
+}
+
+/* Móviles (480px y menores) */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    header {
+        padding: 0.6rem;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+    }
+
+    nav a {
+        padding: 0.6rem 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    main {
+        margin: 0.8rem auto;
+        padding: 0.6rem;
+        border-radius: 4px;
+    }
+
+    main img {
+        margin: 0 auto;
+    }
+
+    main h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    main h3 {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    main ul {
+        margin-left: 1rem;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 0.8rem;
+        font-size: 0.85rem;
+    }
+}
